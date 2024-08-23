@@ -28,7 +28,6 @@ const wss = new WebSocketServer({
     server: app.listen(port, () => console.log(`Server running on port ${port}`))
 });
 
-
 // Real-time processing on the server
 wss.on('connection', (ws) => {
     console.log('New client connected');
